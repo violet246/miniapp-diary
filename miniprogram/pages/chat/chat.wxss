@@ -1,0 +1,52 @@
+/* 搜索框和按钮样式 */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.save-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.diary-list {
+  margin-top: 20px;
+}
+
+.diary-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.diary-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.diary-content {
+  font-size: 16px;
+  margin-top: 5px;
+}

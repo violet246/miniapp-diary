@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 搜索框和按钮 -->
+  <view class="search-bar">
+    <input class="search-input" placeholder="搜索过往日记" bindinput="onSearchInput" />
+    <button class="search-button" bindtap="onSearch">搜索</button>
+  </view>
+
+  <!-- 日记输入框 -->
+  <textarea class="diary-input" placeholder="今天的日记..." bindinput="onDiaryInput" value="{{diaryText}}" />
+
+  <!-- 保存按钮 -->
+  <button class="save-button" bindtap="onSaveDiary">保存日记</button>
+
+  <!-- 日记列表 -->
+  <view class="diary-list">
+    <view wx:for="{{filteredDiaries}}" wx:key="index" class="diary-item">
+      <view class="diary-date">{{item.date}}</view>
+      <view class="diary-content">{{item.content}}</view>
+    </view>
+  </view>
+</view>
